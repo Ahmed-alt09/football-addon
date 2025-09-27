@@ -95,6 +95,12 @@ app.get("/sport/detail", async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+    res.json({
+        "hello": "servcer running"
+    });
+})
+
 async function fetchSportData(compactDate) {
   try {
     const headers = {
